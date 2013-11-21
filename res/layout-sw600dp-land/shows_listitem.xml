@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/shows_horizontal_list_item_padding" >
+
+    <RelativeLayout
+        android:id="@+id/lyt_content"
+        android:layout_width="@dimen/shows_horizontal_list_width"
+        android:layout_height="@dimen/shows_horizontal_list_height"
+        android:background="@android:color/white"
+        android:padding="@dimen/shows_horizontal_list_content_padding" >
+
+        <ImageView
+            android:id="@+id/image_show"
+            android:layout_width="@dimen/shows_horizontal_list_image_width"
+            android:layout_height="@dimen/shows_horizontal_list_image_height"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_show"
+            android:layout_alignRight="@+id/image_show"
+            android:layout_marginBottom="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:background="@drawable/time_panel"
+            android:gravity="center"
+            android:padding="@dimen/smallest_padding"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="@dimen/shows_horizontal_list_text_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_show"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:textAllCaps="true"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/show_list_show_name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:maxLines="@integer/text_max_lines"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="@dimen/shows_horizontal_list_image_width"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginRight="10dp"
+            android:maxLines="2"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

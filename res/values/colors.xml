@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_color">#F76050</color>
+    <color name="white">#FFFFFF</color>
+    <color name="highlight_color">#FF3832</color>
+    <color name="highlighted_color">@android:color/transparent</color>
+    <color name="text_color_1">#A9A9A9</color>
+    <color name="text_color_2">#696969</color>
+    <color name="settings_vie_color">#080707</color>
+    <color name="divider_line_color">#696969</color>
+    <color name="player_bitrate_color">#80000000</color>
+    <color name ="list_selector">#D0D0D0</color>
+</resources>

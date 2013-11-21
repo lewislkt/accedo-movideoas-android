@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="settings_version">APPLICATION VERSION</string>  
+     <string name="settings_streaming_bitrate">Streaming Bitrate</string>
+     <string name="settings_app_version">Version</string>
+        <string name="bit_rate_high">High</string>
+            <string name="bit_rate_medium">Medium</string>
+                <string name="bit_rate_Low">Low</string>
+      <string-array name="setiings_bitrate_array">
+        <item>High</item>
+        <item>Medium</item>
+          <item>Low</item>
+    </string-array>
+</resources>

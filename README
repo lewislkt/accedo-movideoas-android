@@ -1,0 +1,46 @@
+# AdultSwim Android App
+
+## Getting Started
+
+This software requires API 15 and above. 
+
+* Get the source code and install/deploy it using Eclipse.
+
+* Install [Maven](http://maven.apache.org/) by installing the following eclipse plugins
+
+  http://download.eclipse.org/technology/m2e/releases
+  http://rgladwell.github.com/m2e-android/updates/
+
+* In terminal, change the directory to the folder containing the source code and run the commands below:
+  
+  mvn install:install-file -Dfile=./src/lib/movideo_android_sdk-1.0.7.jar -DgroupId=com.movideo -DartifactId=movideo -Dversion=1.0.7 -Dpackaging=jar
+  mvn install:install-file -Dfile=./src/lib/TestFlightLib.jar -DgroupId=com.testflight -DartifactId=testflight -Dversion=1.0 -Dpackaging=jar
+  mvn install:install-file -Dfile=./src/lib/android-support-v4.jar -DgroupId=com.android -DartifactId=support-v4 -Dversion=r18 -Dpackaging=jar
+  mvn install:install-file -Dfile=./src/lib/GoogleAdMobAdsSdk-6.4.1.jar -DgroupId=com.google -DartifactId=doubleclick -Dversion=6.4.1 -Dpackaging=jar
+  mvn install:install-file -Dfile=./src/lib/libGoogleAnalyticsServices.jar -DgroupId=com.google -DartifactId=analytics -Dversion=3 -Dpackaging=jar
+  mvn install
+
+
+* Import project as an existing maven project.
+
+* Open pom.xml and find <path> under<configuration><sdk>,change path location to point your android sdk library.
+
+* Right Click the project and select Maven-> Update Project.
+
+## Target Devices 
+
+Android Phone, Tablet (4.0.3 and above)
+
+## External Dependecies
+
+This project uses [Maven](http://maven.apache.org/) as the libray dependencies manager.
+
+* Movideo SDK(1.0.7)
+* RoboSpice (1.4.5)
+* RoboElectric (2.1.1)
+* Junit (4.2.2)
+* UrlImageViewHelper (1.0.4)
+* DoubleClickSDK (6.4.1)
+* GoogleAnalytics SDK (3)
+* Logback-android (1.0.10-2)
+* Testflight(1.0)

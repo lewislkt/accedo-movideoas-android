@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Featured -->
+    <dimen name="featured_gallery_view_width">800dp</dimen>
+    <dimen name="featured_gallery_view_height">208dp</dimen>
+    <dimen name="featured_subheaders_margin_top">20dp</dimen>
+    <dimen name="featured_subheaders_margin_left">22dp</dimen>
+    <dimen name="featured_horizontal_list_height">270dp</dimen>
+    <dimen name="featured_horizontal_list_margin_top">4dp</dimen>
+    <dimen name="featured_horizontal_list_margin_left">20dp</dimen>
+    <dimen name="featured_horizontal_list_image_height">140dp</dimen>
+    <dimen name="featured_horizontal_list_image_width">250dp</dimen>
+    <dimen name="featured_horizontal_list_text_width">235dp</dimen>
+    <dimen name="featured_horizontal_list_item_padding">4dp</dimen>
+    <dimen name="featured_horizontal_list_content_padding">4dp</dimen>
+    <dimen name="featured_content_height">340dp</dimen>
+    <dimen name="feature_text_size">24sp</dimen>
+    <dimen name="feature_title_width">400dp</dimen>
+    <dimen name="feature_carousel_text_size_1">49sp</dimen>
+    <dimen name="feature_carousel_text_size_2">30sp</dimen>
+    <dimen name="feature_title_background_margin_left">90dp</dimen>
+    <dimen name="feature_title_background_height">165dp</dimen>
+    <dimen name="feature_title_background_padding">25dp</dimen>
+    <dimen name="feature_title_text_size">30sp</dimen>
+    <dimen name="feature_viewpage_incator_margin_top">5dp</dimen>
+    <!-- TopShows -->
+    <dimen name="topshows_content_height">115dp</dimen>
+    <dimen name="topshows_list_image_height">65dp</dimen>
+    <dimen name="topshows_grid_margin_top">5dp</dimen>
+    <dimen name="topshows__margin_right">15dp</dimen>
+    <dimen name="topshows_text_title">24sp</dimen>
+    <dimen name="topshow_content_padding">5dp</dimen>
+    <dimen name="topshows_gridview_margin_top">10dp</dimen>
+    <dimen name="topshows_left_margin">9dp</dimen>
+    <dimen name="topshows_gridview_left_margin">10dp</dimen>
+    <!-- All shows -->
+    <dimen name="allshows_list_content_margin">22dp</dimen>
+    <dimen name="list_text_size">22sp</dimen>
+    <!-- Shows -->
+    <dimen name="shows_top_image_height">173dp</dimen>
+    <dimen name="shows_content_height">200dp</dimen>
+    <dimen name="shows_header_text_height">80dp</dimen>
+    <dimen name="shows_list_image_height">160dp</dimen>
+    <dimen name="shows_list_image_width">280dp</dimen>
+    <dimen name="shows_tab_button_width">140dp</dimen>
+    <dimen name="shows_tab_button_seperator_height">45dp</dimen>
+    <dimen name="shows_list_text_width">280dp</dimen>
+    <dimen name="shows_content_width">727dp</dimen>
+    <dimen name="shows_horizontal_list_item_padding">3dp</dimen>
+    <!-- Episode -->
+
+    <dimen name="episode_image_height">380dp</dimen>
+    <dimen name="episode_horizontal_list_height">270dp</dimen>
+    <dimen name="episode_text_title">30sp</dimen>
+    <dimen name="episode_margin_top">10dp</dimen>
+    <!-- Common -->
+    <dimen name="common_margin">5dp</dimen>
+    <dimen name="common_large_margin">40dp</dimen>
+    <dimen name="normal_text_size">20sp</dimen>
+    <dimen name="normal_text_size2">26sp</dimen>
+    <dimen name="smallest_padding">4dp</dimen>
+    <dimen name="show_list_show_name">24sp</dimen>
+    <dimen name="small_text_size">16sp</dimen>
+    <dimen name="large_text_size">28sp</dimen>
+    <!-- Banner ad -->
+    <dimen name="ad_height">100dp</dimen>
+
+    <!-- About popup -->
+    <dimen name="pop_up_width">500dp</dimen>
+    <dimen name="about_heading_text">40sp</dimen>
+
+    <!-- ActionBar -->
+    <dimen name="tab_text_size">18sp</dimen>
+    <dimen name="title_text_size">24sp</dimen>
+    <dimen name="actionBarsize">60dp</dimen>
+
+    <!-- Playlist -->
+    <dimen name="playlist_list_image_height">160dp</dimen>
+    <dimen name="playlist_list_image_width">280dp</dimen>
+    <dimen name="playlist_list_text_width">280dp</dimen>
+    <dimen name="extended_playlist_title_text">38sp</dimen>
+    <dimen name="extended_playlist_clip_title_text">26sp</dimen>
+    <dimen name="shows_horizontal_list_height">290dp</dimen>
+    <dimen name="shows_horizontal_list_width">255dp</dimen>
+    <dimen name="shows_horizontal_list_margin_top">10dp</dimen>
+    <dimen name="shows_horizontal_list_margin_left">20dp</dimen>
+    <dimen name="shows_horizontal_list_image_height">140dp</dimen>
+    <dimen name="shows_horizontal_list_image_width">250dp</dimen>
+    <dimen name="shows_horizontal_list_text_width">235dp</dimen>
+    <dimen name="shows_horizontal_list_content_padding">2dp</dimen>
+
+</resources>

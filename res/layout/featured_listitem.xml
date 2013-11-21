@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/featured_horizontal_list_item_padding"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/featured_horizontal_list_height"
+        android:background="@android:color/white"
+        android:padding="@dimen/featured_horizontal_list_content_padding" >
+
+        <ImageView
+            android:id="@+id/img_content_small_item"
+            android:layout_width="@dimen/featured_horizontal_list_image_width"
+            android:layout_height="@dimen/featured_horizontal_list_image_height"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_content_small_item"
+            android:layout_alignRight="@+id/img_content_small_item"
+            android:layout_marginBottom="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:background="@drawable/time_panel"
+            android:gravity="center"
+            android:padding="@dimen/smallest_padding"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_show_name"
+            android:layout_width="@dimen/featured_horizontal_list_text_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_content_small_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/feature_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_desc"
+            android:layout_width="@dimen/featured_horizontal_list_text_width"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_show_name"
+            android:layout_below="@+id/txt_show_name"
+            android:maxLines="@integer/feature_text_desc_max_lines"
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

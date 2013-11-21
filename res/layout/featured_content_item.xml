@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/featured_content_height"
+    android:layout_marginTop="@dimen/common_margin"
+    android:background="@drawable/app_background" >
+
+    <TextView
+        android:id="@+id/txt_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/featured_subheaders_margin_left"
+        android:layout_marginTop="@dimen/featured_subheaders_margin_top"
+        android:textAllCaps="true"
+        android:textColor="@drawable/textview_selector"
+        android:textSize="@dimen/normal_text_size2"
+        android:textStyle="bold" />
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lv_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/featured_horizontal_list_height"
+        android:layout_below="@+id/txt_header"
+        android:layout_marginLeft="@dimen/featured_horizontal_list_margin_left"
+        android:layout_marginTop="@dimen/featured_horizontal_list_margin_top"
+        android:scrollbars="none"
+        app:horizontalSpacing="1dp"
+        app:numColumns="auto_fit"
+        app:numRows="1"
+        app:rowHeight="@dimen/featured_horizontal_list_height"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="horizontal"
+        app:stretchMode="spacingWidthUniform" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:layout_centerVertical="true" />
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

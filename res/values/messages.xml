@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="loading_playlist">Loading Playlist</string>
+    <string name="loading_allshows_playlist">Loading All Shows</string>
+    <string name="alert_title_error">Error</string>
+    <string name="network_error_title">Oh no…something has gone screwy.</string>
+    <string name="network_error_message">Seems the hamsters that control the interweb have revolted. Our head trainer is looking into it so please try again later. Or it could be your fault entirely. Stop being so cheap and stealing your neighbour’s Wi-Fi.</string>
+    <string name="media_is_currently_not_available">The super cool, awesome you were trying to look at has just gosh darn up and disappeared…I’m sure you can do something else while we look for it, so come back later. Though it could be that you just can’t type.</string>
+    <string name="system_busy_error">The system busy, Jeez…don’t take it personally, just try again later.</string>
+    <string name="no_result">Your search did not return any results</string>
+    <string name="no_more_videos">Sorry we don\'t have any more videos to show you here.</string>
+
+</resources>

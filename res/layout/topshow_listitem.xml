@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/topshows_grid_margin_top"
+        android:layout_marginLeft="@dimen/topshows_gridview_left_margin"
+        android:layout_marginTop="@dimen/topshows_grid_margin_top"
+        android:background="@android:color/white"
+        android:padding="@dimen/topshow_content_padding" >
+
+        <com.turnerapac.adultswimau.apps.generic.customviews.ResizableImageView
+            android:id="@+id/topshow_listimg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/topshows_list_image_height"
+            android:layout_alignParentTop="true"
+           />
+
+        <TextView
+            android:id="@+id/topshow_nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topshow_listimg"
+            android:padding="@dimen/common_margin"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/topshows_text_title"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

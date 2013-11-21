@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.turnerapac.adultswimau.apps.generic"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="AdultSwim"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="com.turnerapac.adultswimau.apps.generic.service.XmlSpiceService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.turnerapac.adultswimau.apps.generic.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.turnerapac.adultswimau.apps.generic.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.turnerapac.adultswimau.apps.generic.PlayerActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="EpisodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ShowsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.turnerapac.adultswimau.apps.generic.settings.SettingsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="AboutTabletActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name=".globalsearch.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".globalsearch.SearchActivityTab"
+            android:screenOrientation="fullSensor" >
+        </activity>
+        <activity
+            android:name="com.turnerapac.adultswimau.apps.generic.SettingsPopupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ExtendedPlaylistActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

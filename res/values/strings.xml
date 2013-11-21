@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">adult swim au</string>
+    <string name="name">[adult swim]</string>
+    <string name="hello">Hello adultswim!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="string_splash">Splash Screen!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="action_navigation_featured">Featured</string>
+    <string name="action_navigation_all_shows">All Shows</string>
+    <string name="action_navigation_top_shows">Top Shows</string>
+    <string name="action_navigation_playlists">Playlists</string>
+    <string name="duration">Duration:</string>
+    <string name="all_videos">All Videos</string>
+    <string name="episodes">Episodes</string>
+    <string name="clips">Clips</string>
+
+    <string-array name="playlists_array_tab">
+        <item>Episode Number</item>
+        <item>Title</item>
+        <item>Description</item>
+        <item>Most Recent</item>
+        <item>Most Played Today</item>
+        <item>Most Played This Week</item>
+        <item>Most Played This Month</item>
+    </string-array>
+      <string-array name="playlists_array_phone">
+        <item>All Videos</item>
+        <item>Episodes</item>
+        <item>Clips</item>
+    </string-array>
+    <string-array name="searchlists_array">
+         <item>Most Relevant</item>
+        <item>Most Popular</item>
+        <item>Most Recent</item>
+        <item>Trending</item>
+    </string-array>
+    <string-array name="searchlistsitems_array">
+        <item>CLIPS</item>
+        <item>ALL VIDEOS</item>
+        <item>EPISODES</item>
+    </string-array>
+
+    <string name="action_search_tab_allvideos">All Videos</string>
+    <string name="action_search_tab_episode">Episodes</string>
+    <string name="action_search_tab_clips">Clips</string>
+    <string name="action_search_tab_popular">Most Popular</string>
+    <string name="action_search_tab_recent">Most Recent</string>
+    <string name="action_search_tab_relevant">Most Relevant</string>
+    <string name="action_search_tab_trending">Trending</string>
+
+    <string-array name="searchlistsitems_arraytab">
+        <item>Most Relevant</item>
+        <item>Most Popular</item>
+        <item>Most Recent</item>
+        <item>Trending</item>
+    </string-array>
+
+    <string name="action_search_allvideos">All Videos</string>
+    <string name="action_search_episodes">Episodes</string>
+    <string name="action_search_clips">Clips</string>
+    <string name="about">Adult Swim is your late-night home for animation and live-action comedy. 
+        Enjoy some of your favorite shows, including Robot Chicken, Venture Bros., Tim and Eric, 
+        Aqua Teen, Delocated, Metalocalypse, Squidbillies, 
+        and more. Watch some playlists. Fast forward, rewind, pause. It\'s all here. 
+        And remember to come back again again for new full episodes released each month. 
+        We know you wouldn\'t forget, but it never hurts to make sure.</string>
+
+</resources>

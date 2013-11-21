@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shows_top_image_height" >
+
+        <ImageView
+            android:id="@+id/img_show"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/shows_top_image_height"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_showname"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_large_margin"
+            android:textAllCaps="true"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.turnerapac.adultswimau.apps.generic.customviews.CustomScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="@dimen/common_large_margin"
+        android:layout_marginRight="@dimen/common_large_margin"
+        android:layout_marginTop="@dimen/episode_margin_below_ad"
+        android:background="@android:color/white"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_margin" >
+
+            <com.turnerapac.adultswimau.apps.generic.customviews.ResizableImageView
+                android:id="@+id/image_episode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/episode_image_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/image_episode"
+                android:layout_below="@+id/image_episode"
+                android:layout_marginTop="18dp"
+                android:layout_toLeftOf="@+id/img_rating"
+                android:padding="@dimen/common_margin"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_rating"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/image_episode"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/lyt_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/img_rating"
+                android:layout_below="@+id/img_rating"
+                android:layout_marginTop="@dimen/common_margin" >
+
+                <Button
+                    android:id="@+id/btn_share"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:actionProviderClass="android.widget.ShareActionProvider"
+                    android:background="@drawable/ic_share" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/btn_share"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_share"
+                    android:src="@drawable/triangle" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_episode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_name"
+                android:layout_toLeftOf="@+id/img_rating"
+                android:layout_below="@+id/txt_name"
+                android:padding="@dimen/common_margin"
+                android:textColor="@color/text_color_2"
+                android:textSize="@dimen/normal_text_size" />
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_name"
+                android:layout_below="@+id/txt_episode"
+                android:padding="@dimen/common_margin"
+                android:textColor="#A9A9A9"
+                android:textSize="@dimen/normal_text_size" />
+
+            <TextView
+                android:id="@+id/txt_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/image_episode"
+                android:layout_alignRight="@+id/image_episode"
+                android:layout_marginBottom="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"
+                android:background="@drawable/time_panel"
+                android:gravity="center"
+                android:padding="@dimen/smallest_padding"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image_play"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/episode_image_height"
+                android:layout_above="@+id/txt_name"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/play_button" />
+        </RelativeLayout>
+    </com.turnerapac.adultswimau.apps.generic.customviews.CustomScrollView>
+
+    <RelativeLayout
+        android:id="@+id/addlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ad_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/transparent"
+        android:gravity="center" >
+    </RelativeLayout>
+
+</RelativeLayout>

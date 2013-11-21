@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/common_margin" >
+
+    <RelativeLayout
+        android:id="@+id/lyt_search_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/common_margin"
+        android:paddingTop="2dp">
+
+        <ImageView
+            android:id="@+id/search_tab_image_show"
+            android:layout_width="@dimen/shows_list_image_width"
+            android:layout_height="@dimen/shows_list_image_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/search_tab_txt_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/search_tab_image_show"
+            android:layout_alignRight="@+id/search_tab_image_show"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/time_panel"
+            android:gravity="center"
+            android:padding="@dimen/smallest_padding"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/search_tab_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/search_tab_image_show"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="60dp"
+            android:layout_toLeftOf="@+id/search_tab_rating"
+            android:layout_toRightOf="@+id/search_tab_image_show"
+            android:maxLines="3"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/normal_text_size2"
+            android:textStyle="bold" />
+
+      
+
+        <TextView
+            android:id="@+id/search_tab_destxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/search_tab_name_txt"
+            android:layout_below="@+id/search_tab_name_txt"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/search_tab_share_button"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/small_text_size" />
+
+        <ImageView
+            android:id="@+id/search_tab_rating"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/search_tab_name_txt"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/search_tab_infotxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/search_tab_destxt"
+            android:layout_below="@+id/search_tab_destxt"
+            android:layout_toLeftOf="@+id/search_tab_share_button"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:textColor="@color/text_color_1" />
+
+        <Button
+            android:id="@+id/search_tab_share_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/search_tab_rating"
+            android:layout_below="@+id/search_tab_rating"
+            android:layout_marginTop="10dp"
+            android:actionProviderClass="android.widget.ShareActionProvider"
+            android:background="@drawable/searchshare"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+</LinearLayout>

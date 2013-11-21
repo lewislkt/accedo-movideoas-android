@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.turnerapac.adultswimau.apps.generic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shows_top_image_height"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_large_margin"
+        android:layout_marginRight="@dimen/common_large_margin"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/spinner_bg" >
+
+        <Spinner
+            android:id="@+id/sp_playlist_phone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/spinner_bg" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" >
+
+        <com.jess.ui.TwoWayGridView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/list_shows"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/ad_height"
+            android:layout_marginLeft="@dimen/common_large_margin"
+            android:layout_marginRight="@dimen/common_large_margin"
+            android:scrollbars="none"
+            app:columnWidth="@dimen/shows_content_width"
+            app:gravity="center_horizontal"
+            app:horizontalSpacing="0dp"
+            app:numColumns="1"
+            app:numRows="auto_fit"
+            app:rowHeight="@dimen/shows_content_height"
+            app:scrollDirectionLandscape="horizontal"
+            app:scrollDirectionPortrait="vertical"
+            app:stretchMode="spacingWidthUniform"
+            app:verticalSpacing="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/shows_addlayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ad_height"
+            android:layout_gravity="bottom"
+            android:background="@drawable/transparent"
+            android:gravity="center" >
+        </RelativeLayout>
+
+         <ProgressBar
+            android:id="@+id/loader"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:visibility="invisible"
+            android:layout_marginBottom="@dimen/ad_height"
+            />
+        <ProgressBar
+            android:id="@+id/shows_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>
